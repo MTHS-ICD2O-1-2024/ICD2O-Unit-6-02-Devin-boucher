@@ -8,15 +8,20 @@
 
 // eslint-disable-next-line no-unused-vars
 
-// Cookie Clicker Logic
 function updateCookieCount() {
-  const count = localStorage.getItem("cookieCount") || 0
-  document.getElementById("cookie-count").textContent = count
+  let savedCount = localStorage.getItem("cookieCount")
+  if (savedCount === null) {
+    savedCount = 0
+  }
+  document.getElementById("cookie-count").textContent = savedCount
 }
 
 function incrementCookieCount() {
-  let count = Number(localStorage.getItem("cookieCount")) || 0
-  count++
-  localStorage.setItem("cookieCount", count)
-  document.getElementById("cookie-count").textContent = count
+  let savedCount = localStorage.getItem("cookieCount")
+  if (savedCount === null) {
+    savedCount = 0
+  }
+  let newCount = parseInt(savedCount) + 1
+  localStorage.setItem("cookieCount", newCount)
+  document.getElementById("cookie-count").textContent = newCount
 }

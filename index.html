@@ -2,8 +2,8 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Cookie Clicker App" />
-    <meta name="keywords" content="cookie clicker, javascript, localstorage" />
+    <meta name="description" content="Cookie Clicker" />
+    <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Devin Boucher" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -15,6 +15,10 @@
       href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <title>Cookie Clicker</title>
   </head>
 
@@ -28,14 +32,13 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content" style="padding: 16px; text-align: center">
+        <div class="page-content cookie-clicker-container">
           <h4>Click the cookie!</h4>
           <img
             id="cookie-img"
-            src="/images/1000_F_578414547_FnKLezfSSevbgH1bmeZvTSy9KycZ7Y0c.jpg"
+            src="images/chocolate-chips-on-cookie-on-transparent-background-png.webp"
             alt="Cookie"
-            width="200"
-            style="cursor: pointer"
+            class="cookie-img"
             onclick="incrementCookieCount()"
           />
           <p>
