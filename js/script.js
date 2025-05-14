@@ -8,20 +8,20 @@
 
 // eslint-disable-next-line no-unused-vars
 
-function updateCookieCount() {
-  let savedCount = localStorage.getItem("cookieCount")
+function updateCookieCount () {
+  let savedCount = localStorage.getItem('cookieCount')
   if (savedCount === null) {
     savedCount = 0
   }
-  document.getElementById("cookie-count").textContent = savedCount
+  document.getElementById('cookie-count').textContent = savedCount
 }
 
-function incrementCookieCount() {
-  let savedCount = localStorage.getItem("cookieCount")
+function incrementCookieCount () {
+  let savedCount = localStorage.getItem('cookieCount')
   if (savedCount === null) {
     savedCount = 0
   }
-  let newCount = parseInt(savedCount) + 1
-  localStorage.setItem("cookieCount", newCount)
-  document.getElementById("cookie-count").textContent = newCount
+  const newCount = parseInt(savedCount) + 1
+  localStorage.setItem('cookieCount', newCount)
+  document.getElementById('cookie-count').textContent = newCount
 }
